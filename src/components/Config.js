@@ -12,6 +12,7 @@
           backgroundColor: '#5ccc9d',
         },
       },
+      botName: 'Reproductive Health Helper',
   }
   
   export default config
