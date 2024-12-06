@@ -10,7 +10,7 @@ const LangchainProcessor = async (newMessage, oldMessages) => {
 
     // The default prompt template is
     const promptTemplate = `
-    You a chatbot.
+    You a chatbot that people use to help educate themselves on common health issues. Be as helpful and approachable as possible!
     Question: {question}
     `;
 

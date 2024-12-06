@@ -1,4 +1,5 @@
 import LangchainProcessor from './LangchainProcessor';
+import DocumentProcessor from './langchain_options/DocumentProcessor'
 
 class MessageParser {
     constructor(actionProvider, state, createChatBotMessage) {
@@ -9,7 +10,7 @@ class MessageParser {
 
     async parse(incomingMessage) {
         // Use the processor to get a reply
-        const reply = await LangchainProcessor(incomingMessage, this.state.messages);
+        const reply = await DocumentProcessor(incomingMessage, this.state.messages);
         
         // Send the reply using the actionProvider
         this.actionProvider.sendBotResponse(reply);
